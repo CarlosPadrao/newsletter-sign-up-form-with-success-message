@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(235, 18%, 26%);
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    min-height: 700px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 25px 20px;
+}
+
+.col-A {
+    flex: 0 0 55%;
+    max-width: 55%;
+    align-self: center;
+}
+
+.col-A .content {
+    padding: 0 60px 0 30px;
+}
+
+.col-A .content .contentText {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.col-A .content .contentText h1 {
+    color: hsl(234, 29%, 20%);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.col-A .content .contentText h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.col-A .content .contentSteps ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-A .content .contentSteps ul li {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.col-A .content .contentSteps ul li::before {
+    display: block;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url('../assets/images/icon-list.svg');
+    margin-right: 12px;
+}
+
+.col-A .content .contentSteps li::marker {
+    content: "";
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: hsl(234, 29%, 20%);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+form input {
+    width: 100%;
+    height: 45px;
+    outline: none !important;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 18px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.col-B {
+    flex: 0 0 45%;
+    max-width: 45%;
+    background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* TOP BAR */
+.attribution {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    background: rgb(76 66 241);
+    font-size: 14px; 
+    text-align: center; 
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .attribution {
+        font-size: 12px;
+    }
+}
+
+.attribution a {
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.attribution a:hover {
+    font-size: 16px;
+    transition: 0.5s ease;
+}
