@@ -21,6 +21,11 @@ body {
     height: 100%;
     background-color: hsl(235, 18%, 26%);
 }
+@media only screen and (max-width: 575.98px) {
+    #main {
+        background-color: hsl(0, 0%, 100%);
+    }
+}
 
 .container {
     width: 100%;
@@ -38,14 +43,34 @@ body {
     padding: 25px 20px;
 }
 
+@media only screen and (max-width: 575.98px) {
+    .project {
+        padding: 25px 0;
+        padding-top: 0;
+        border-radius: ;
+    }
+}
+
 .col-A {
     flex: 0 0 55%;
     max-width: 55%;
     align-self: center;
 }
+@media only screen and (max-width: 575.98px) {
+    .col-A {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+    }
+}
 
 .col-A .content {
     padding: 0 60px 0 30px;
+}
+@media only screen and (max-width: 575.98px) {
+    .col-A .content {
+        padding: 30px 25px 0 25px;
+    }
 }
 
 .col-A .content .contentText {
@@ -54,11 +79,22 @@ body {
     gap: 18px;
     margin-bottom: 35px;
 }
+@media only screen and (max-width: 575.98px) {
+    .col-A .content .contentText {
+        gap: 18px;
+        margin-bottom: 50px;
+    }
+}
 
 .col-A .content .contentText h1 {
     color: hsl(234, 29%, 20%);
     font-size: 50px;
     font-weight: 600;
+}
+@media only screen and (max-width: 575.98px) {
+    .col-A .content .contentText h1 {
+        font-size: 40px;
+    }
 }
 
 .col-A .content .contentText h2 {
@@ -70,6 +106,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+@media only screen and (max-width: 575.98px) {
+    .col-A .content .contentSteps ul {
+        gap: 20px;
+    }
 }
 
 .col-A .content .contentSteps ul li {
@@ -92,6 +133,16 @@ body {
     content: "";
 }
 
+form.invalid-email input {
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsla(4, 100%, 67%, 0.308);
+    color: hsl(4, 100%, 67%);
+}
+
+form span {
+    display: none;
+}
+
 form label {
     display: block;
     margin-bottom: 8px;
@@ -109,8 +160,14 @@ form input {
     border-radius: 7px;
     margin-bottom: 20px;
 }
+@media only screen and (max-width: 575.98px) {
+    form input {
+        height: 55px;
+    }
+}
 
 form button {
+    cursor: pointer;
     width: 100%;
     background-color: hsl(234, 29%, 20%);
     color: #fff;
@@ -121,6 +178,18 @@ form button {
     border-radius: 7px;
     padding: 18px 0;
 }
+@media only screen and (max-width: 575.98px) {
+    form button {
+    }
+}
+
+form button:hover {
+    background-color: hsl(4, 100%, 67%);
+    transition: .5s ease;
+}
+
+
+
 
 
 
@@ -138,6 +207,21 @@ form button {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+@media only screen and (max-width: 575.98px) {
+    .col-B {
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+        display: block;
+        height: 284px;
+        order: 0;
+    }
+}
+
+
+
+
+
 
 
 /* TOP BAR */

@@ -37,10 +37,13 @@
               </div>
             </div>
             <div class="contentForm">
-              <form action="">
-                <label for="">Email address</label>
+              <form action="" class=""> <!-- change class invalid-email -->
+                <div style="display: flex; justify-content: space-between;">
+                  <label for="email">Email address</label>
+                  <span style="color: hsl(4, 100%, 67%);">Valid email required</span>
+                </div>
                 <input type="email" placeholder="email@company.com">
-                <button type="button">Subscribe to monthly newsletter</button>
+                <button type="button" id="btn">Subscribe to monthly newsletter</button>
               </form>
             </div>
           </div>
